@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+   <link rel="stylesheet" href="/resources/demos/style.css">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+
+   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+   <script>
+      $(function () {
+         $("#tabs").tabs();
+      });
+   </script>
+
+
+   <title>Document</title>
+</head>
+
+<body>
+   <header>
+
+      <div class="container header__container">
+         <img src="img/Logo.svg" alt="Логотип" class="header-logo">
+         <div class="menu-burger__header">
+            <span></span>
+         </div>
+
+         <nav class="header__nav">
+            <ul class="menu header__menu">
+               <li><a href="" class="menu__item">О нас</a></li>
+               <li><a href="" class="menu__item">Проекты</a></li>
+               <li><a href="" class="menu__item">Этапы</a></li>
+               <li><a href="" class="menu__item">Отзывы</a></li>
+               <li><a href="" class="menu__item">Контакты</a></li>
+            </ul>
+         </nav>
+
+         <a href="#" class="header-search">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <rect x="19.5138" y="18.5495" width="8" height="2" transform="rotate(45 19.5138 18.5495)"
+                  fill="#333333" />
+               <circle cx="11.5" cy="11.5" r="10.5" stroke="#333333" stroke-width="2" />
+            </svg>
+         </a>
+
+      </div>
+
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+      <script>
+         $(document).ready(function () {
+            $('.menu-burger__header').click(function () {
+               $('.menu-burger__header').toggleClass('open-menu');
+               $('.header__nav').toggleClass('open-menu');
+               $('body').toggleClass('fixed-page');
+            });
+         });
+      </script>
+
+   </header>
+
+
+   <main>
+
+      <!-- Slider main container -->
+      <div class="swiper-container">
+         <div class="swiper-text">
+            <h1 class="header-surface-text1">Проектные решения любой сложности</h1>
+            <p class="header-surface-text2">Есть над чем задуматься: базовые сценарии поведения
+               пользователей и по сей день остаются уделом проектантов</p>
+            <button class="header-surface-button">Заказать расчет</button>
+         </div>
+         <!-- Additional required wrapper -->
+         <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide" style="background: url('img/low-angle-photo-of-balconies-2462015\ 1.jpg');"></div>
+            <div class="swiper-slide"
+               style="background: url('img/brown-and-blue-glass-building-2093076\ 2\ \(1\).jpg');"></div>
+            <div class="swiper-slide"
+               style="background: url('img/apartment-apartment-building-architecture-building-323705\ 2\ \(1\).jpg');">
+            </div>
+            ...
+         </div>
+
+         <!-- If we need pagination -->
+         <div class="swiper-pagination">
+         </div>
+
+         <!-- If we need scrollbar -->
+         <div class="swiper-scrollbar"></div>
+      </div>
+
+      <script>
+         const swiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+               el: '.swiper-pagination',
+               clickable: 'true',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+               el: '.swiper-scrollbar',
+            },
+         });
+      </script>
+
+
+      <section class="section1">
+         <div class="container">
+            <div class="section1-about-us">
+               <h2 class="section1-about-us-head">О нас</h2>
+               <div class="section1-about-us-text">
+                  Также как перспективное планирование создаёт
+                  необходимость включения в производственный план целого ряда внеочередных мероприятий с
+                  учётом комплекса экспериментов, поражающих по своей масштабности и грандиозности. А
+                  также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены отталкиваться
+                  от того, что убеждённость некоторых оппонентов требует от нас анализа как самодостаточных,
+                  так и внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип
+                  проекта предопределяет высокую востребованность позиций, занимаемых участниками в отношении
+                  поставленных задач. Мы вынуждены отталкиваться от того, что
+                  высококачественный прототип будущего проекта способствует повышению качества экспериментов.
+               </div>
+            </div>
+
+
+            <div class="section1-general-boxes">
+
+               <div class="section1-picture">
+                  <div class="section1-picture-inside">
+                     <p class="section1-picture-text">Принимая во внимание показатели успешности, перспективное
+                        планирование способствует подготовке и реализации новых принципов.</p>
+                     <button class="section1-picture-button">Подробнее</button>
+                  </div>
+               </div>
+
+               <div class="section1-boxes">
+                  <div class="section1-box1">
+                     <img src="img/box1.svg" alt="items" class="section1-box1-img">
+                     <p class="section1-box1-text">
+                        <span class="section1-box1-text-bold">Консультация с широким активом</span>
+                        <br>А также свежий взгляд на привычные вещи - безусловно открывает новые
+                        горизонты для как самодостаточных, так и внешне зависимых концептуальных решений.
+                     </p>
+                  </div>
+
+                  <div class="section1-box2">
+                     <img src="img/box2.svg" alt="items" class="section1-box2-img">
+                     <p class="section1-box2-text">
+                        <span class="section1-box2-text-bold">В своем стремлении повысить</span>
+                        Качество жизни, они забывают, что сплочённость команды профессионалов
+                        представляет собой интересный эксперимент проверки прогресса профессионального сообщества.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+
+      <section class="section2">
+         <div class="container">
+            <h2 class="section2-how-do-we-work-head">Как мы работаем</h2>
+            <div class="content">
+
+               <div id="tabs">
+                  <ul class="tabs-nav">
+                     <li><a href="#tab-1">1 шаг</a></li>
+                     <li><a href="#tab-2">2 шаг</a></li>
+                     <li><a href="#tab-3">3 шаг</a></li>
+                     <li><a href="#tab-4">4 шаг</a></li>
+                  </ul>
+                  <div class="tabs-items">
+                     <div class="tabs-item" id="tab-1">
+                        <div class="section2-information">
+                           <div>
+                              <p class="section2-information-text">
+                                 <span class="section2-information-text-bold">Проводим консультацию</span>
+                                 <br> Влечет за собой процесс внедрения и модернизации приоритизации разума над
+                                 эмоциями.
+                                 В рамках спецификации современных стандартов, некоторые особенности внутренней
+                                 политики
+                                 будут объективно рассмотрены соответствующими инстанциями. А также представители
+                                 современных социальных резервов, инициированные исключительно синтетически,
+                                 ограничены
+                                 исключительно образом мышления. Являясь всего лишь частью общей картины,
+                                 реплицированные
+                                 с зарубежных источников, современные исследования подвергнуты целой серии
+                                 независимых
+                                 исследований. Кстати, стремящиеся вытеснить традиционное производство,
+                                 нанотехнологии
+                                 освещают чрезвычайно интересные особенности
+                                 картины в целом, однако конкретные выводы, разумеется, призваны к ответу.
+                              </p>
+                              <div class="section2-information-buttons">
+                                 <button class="section2-information-button1">Подробнее</button>
+                                 <button class="section2-information-button2">Договор</button>
+                              </div>
+                           </div>
+                           <div class="section2-information-picture">
+                              <img src="img/tab1.jpg" alt="" class="section2-information-img">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="tabs-item" id="tab-2">
+                        <div class="section2-information">
+                           <div>
+                              <p class="section2-information-text">
+                                 <span class="section2-information-text-bold">Составляем смету</span>
+                                 <br> Внедрения и модернизации приоритизации разума над эмоциями. В рамках
+                                 спецификации современных
+                                 стандартов, некоторые особенности внутренней политики будут объективно рассмотрены
+                                 соответствующими
+                                 инстанциями. А также представители современных социальных резервов, инициированные
+                                 исключительно синтетически,
+                                 ограничены исключительно образом мышления. Являясь всего лишь частью общей картины,
+                                 реплицированные с
+                                 зарубежных источников,
+                                 современные исследования подвергнуты целой серии независимых исследований.
+                              </p>
+                              <div class="section2-information-buttons">
+                                 <button class="section2-information-button1">Подробнее</button>
+                                 <button class="section2-information-button2">Договор</button>
+                              </div>
+                           </div>
+                           <div class="section2-information-picture">
+                              <img src="img/tab2.jpg" alt="" class="section2-information-img">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="tabs-item" id="tab-3">
+                        <div class="section2-information">
+                           <div>
+                              <p class="section2-information-text">
+                                 <span class="section2-information-text-bold">Привлекаем подрядчиков</span>
+                                 <br> Идейные соображения высшего порядка, а также новая модель организационной
+                                 деятельности требует
+                                 анализа прогресса профессионального сообщества. Высокий уровень вовлечения
+                                 представителей целевой аудитории
+                                 является четким доказательством простого факта: высококачественный прототип будущего
+                                 проекта напрямую зависит
+                                 от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что
+                                 новая модель организационной
+                                 деятельности говорит о возможностях системы массового участия. Принимая во внимание
+                                 показатели успешности,
+                                 постоянное информационно-пропагандистское обеспечение нашей деятельности
+                                 позволяет выполнить важные задания по разработке прогресса профессионального
+                                 сообщества.
+                              </p>
+                              <div class="section2-information-buttons">
+                                 <button class="section2-information-button1">Подробнее</button>
+                                 <button class="section2-information-button2">Договор</button>
+                              </div>
+
+
+                           </div>
+                           <div class="section2-information-picture">
+                              <img src="img/tab3.jpg" alt="" class="section2-information-img">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="tabs-item" id="tab-4">
+                        <div class="section2-information">
+                           <div>
+                              <p class="section2-information-text">
+                                 <span class="section2-information-text-bold">Инспектируем все этапы работ</span>
+                                 <br> Высокий уровень вовлечения представителей целевой аудитории является четким
+                                 доказательством
+                                 простого факта: высококачественный прототип будущего проекта напрямую зависит от
+                                 дальнейших
+                                 направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель
+                                 организационной
+                                 деятельности говорит о возможностях системы массового участия. Принимая во внимание
+                                 показатели успешности,
+                                 постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет.
+                              </p>
+                              <div class="section2-information-buttons">
+                                 <button class="section2-information-button1">Подробнее</button>
+                                 <button class="section2-information-button2">Договор</button>
+                              </div>
+
+
+                           </div>
+                           <div class="section2-information-picture">
+                              <img src="img/tab4.jpg" alt="" class="section2-information-img">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <script>
+                  $(function () {
+                     var tab = $('#tabs .tabs-items > div');
+                     tab.hide().filter(':first').show();
+                     $('#tabs .tabs-nav a').click(function () {
+                        tab.hide();
+                        tab.filter(this.hash).show();
+                        $('#tabs .tabs-nav a').removeClass('active');
+                        $(this).addClass('active');
+                        return false;
+                     }).filter(':first').click();
+
+                     $('.tabs-target').click(function () {
+                        $('#tabs .tabs-nav a[href=' + $(this).data('id') + ']').click();
+                     });
+                  });
+
+               </script>
+
+            </div>
+         </div>
+      </section>
+
+      <section class="section3">
+         <div class="container">
+            <h2 class="section3-head">Часто задаваемые вопросы</h2>
+
+            <div id="accordion">
+               <h3 class="section3-list-item-link">
+                 Из чего формируется конечная стоимость проекта?
+               <img src="img/+х.svg" alt="" class="button-crist">
+               </h3>
+               <div class="tabs__text" id="tabs-1" style="height: 0px;">
+                  <p class="text-inside">
+                     Являясь всего лишь частью общей картины, непосредственные участники технического прогресса
+                     призывают нас к новым свершениям, которые, в свою очередь,
+                     должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта
+                     является качественно новой ступенью первоочередных требований. А ещё некоторые особенности
+                     внутренней политики,
+                     которые представляют собой яркий пример континентально-европейского типа политической культуры,
+                     будут
+                     объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки
+                     победы
+                     институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны
+                     как
+                     претенденты на роль ключевых факторов. Приятно, граждане, наблюдать, как некоторые особенности
+                     внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации
+                     набирают популярность среди определенных слоев населения, а значит, должны быть
+                     объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а
+                     также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны
+                     быть представлены в исключительно положительном свете.
+                  </p>
+
+               </div>
+               <h3 class="section3-list-item-link">
+                  У меня есть свой проект. Сможем ли мы его доработать / реализовать?
+                  <img src="img/+х.svg" alt="" class="button-crist">
+               </h3>
+               <div class="tabs__text" id="tabs-2" style="height: 0px;">
+                  <p>
+                     jQuery — библиотека JavaScript, фокусирующаяся на взаимодействии JavaScript и HTML. Библиотека
+                     jQuery помогает легко получать доступ к любому элементу DOM, обращаться к атрибутам и содержимому
+                     элементов DOM, манипулировать ими. Также библиотека jQuery предоставляет удобный API для работы с
+                     AJAX. Сейчас разработка jQuery ведётся командой jQuery во главе с Джоном Резигом.
+                  </p>
+               </div>
+               <h3 class="section3-list-item-link">
+                   Я выбираю между разными компаниями. В чём ваше отличие?
+                  <img src="img/+х.svg" alt="" class="button-crist">
+               </h3>
+               <div class="tabs__text" id="tabs-3" style="height: 52px;">
+                  <p>
+                     DOM — это не зависящий от платформы и языка программный интерфейс, позволяющий программам и
+                     скриптам получить доступ к содержимому HTML-, XHTML- и XML-документов, а также изменять содержимое,
+                     структуру и оформление таких документов.
+                  </p>
+               </div>
+               <h3 class="section3-list-item-link">
+                  Могу ли я делегировать вам работу / согласование с подрядчиком / организацией? 
+                  <img src="img/+х.svg" alt="" class="button-crist">
+               </h3>
+               <div class="tabs__text" id="tabs-4" style="height: 0px;">
+                  <p>
+                     CSS — формальный язык описания внешнего вида документа, написанного с использованием языка
+                     разметки.
+                  </p>
+               </div>
+               <h3 class="section3-list-item-link">
+                  Могу ли я вернуть деньги на каком-либо из этапов работ?
+                  <img src="img/+х.svg" alt="" class="button-crist">
+               </h3>
+               <div class="tabs__text" id="tabs-5" style="height: 0px;">
+                  <p>
+                     jQuery — библиотека JavaScript, фокусирующаяся на взаимодействии JavaScript и HTML. Библиотека
+                     jQuery помогает легко получать доступ к любому элементу DOM, обращаться к атрибутам и содержимому
+                     элементов DOM, манипулировать ими. Также библиотека jQuery предоставляет удобный API для работы с
+                     AJAX. Сейчас разработка jQuery ведётся командой jQuery во главе с Джоном Резигом.
+                  </p>
+               </div>
+            </div>
+
+
+
+            <script>
+
+               var accordion = document.getElementById('accordion');
+               accordion.addEventListener('click', change);
+               function change(event) {
+                  var targ = event.target;
+                  if (targ.tagName !== 'H3') return;
+                  if (targ.classList.contains('select')) {
+                     hideAll();
+                  } else {
+                     hideAll();
+                     targ.classList.add('select');
+                     showText(targ.nextElementSibling);
+                  }
+               }
+               function hideAll() {
+                  var h3El = accordion.querySelectorAll('h3');
+                  var divEl = accordion.querySelectorAll('div');
+                  for (var i = 0; i < h3El.length; i++) {
+                     h3El[i].classList.remove('select');
+                  }
+                  for (var i = 0; i < divEl.length; i++) {
+                     divEl[i].style.height = '0';
+                  }
+               }
+               function showText(textEl) {
+                  textEl.style.height = textEl.scrollHeight + 'px';
+               }
+
+
+            </script>
+
+
+
+         </div>
+      </section>
+   </main>
+
+   <footer class="footer1">
+      <div class="container">
+         <div class="footer-space">
+            <div class="footer-space1">
+               <img src="img/logo-2.png" alt="" class="footer-logo">
+               <ul class="footer-space1-list">
+                  <li class="footer-space1-list-item">О нас</li>
+                  <li class="footer-space1-list-item">Проекты</li>
+                  <li class="footer-space1-list-item">Отзывы </li>
+                  <li class="footer-space1-list-item">Договор оферты</li>
+                  <li class="footer-space1-list-item">Договор подряда</li>
+                  <li class="footer-space1-list-item">Конфиденциальность</li>
+                  <li class="footer-space1-list-item">Партнёрское соглашение</li>
+               </ul>
+               <div class="footer-space1-networks">
+                  <a href="#"><img src="img/fb.png" alt="facebook" class="footer-space1-networks-img"></a>
+                  <a href="#"><img src="img/vk.png" alt="vk" class="footer-space1-networks-img"></a>
+                  <a href="#"><img src="img/instagram.png" alt="inst" class="footer-space1-networks-img"></a>
+               </div>
+            </div>
+            <div class="footer-space2">
+               <h1 class="footer-space2-head">Оставить заявку</h1>
+               <form action="#" method="POST">
+                  <ul class="footer-space2-form">
+                     <li class="form-item"><input name="name" placeholder="Фамилия,Имя,Отчество*"
+                           class="footer-space2-form-item"></li>
+                     <li class="form-item"><input name="mail" placeholder="E-mail*" type="email"
+                           class="footer-space2-form-item"></li>
+                     <li class="form-item"><textarea class="footer-space2-form-item" placeholder="Сообщение"></textarea>
+                     </li>
+                     <li class="footer-space2-form-item1">
+                        <button type="submit" class="footer-space2-form-item-button">Отправить данные</button>
+                        <div class="footer-checkbox">
+                           <input type="checkbox" class="form-ul-checkbox" id="checked1" name="argee" value="yes">
+                           <label for="checked1"> Согласен на обработку данных</label>
+                        </div>
+                     </li>
+
+                  </ul>
+               </form>
+            </div>
+            <div class="footer-space3">
+               <p class="footer-space3-text">
+                  Высокий уровень вовлечения представителей целевой аудитории является четким
+                  доказательством простого факта: разбавленное изрядной долей эмпатии, рациональное
+                  мышление позволяет оценить значение модели развития. Таким образом, консультация с широким
+                  активом обеспечивает
+                  широкому кругу (специалистов) участие в формировании стандартных подходов.
+               </p>
+            </div>
+         </div>
+      </div>
+
+   </footer>
+
+
+
+
+
+</body>
+
+</html>
