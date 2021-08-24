@@ -74,59 +74,64 @@
 
    <main>
 
-      <!-- Slider main container -->
-      <div class="swiper-container">
-         <div class="swiper-text">
-            <h1 class="header-surface-text1">Проектные решения любой сложности</h1>
-            <p class="header-surface-text2">Есть над чем задуматься: базовые сценарии поведения
-               пользователей и по сей день остаются уделом проектантов</p>
-            <button class="header-surface-button">Заказать расчет</button>
-         </div>
-         <!-- Additional required wrapper -->
-         <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide" style="background: url('img/low-angle-photo-of-balconies-2462015\ 1.jpg');"></div>
-            <div class="swiper-slide"
-               style="background: url('img/brown-and-blue-glass-building-2093076\ 2\ \(1\).jpg');"></div>
-            <div class="swiper-slide"
-               style="background: url('img/apartment-apartment-building-architecture-building-323705\ 2\ \(1\).jpg');">
+      <section>
+         <!-- Slider main container -->
+         <div class="swiper-container">
+            <div class="swiper-text">
+               <h1 class="swiper-text-head">Проектные решения любой сложности</h1>
+               <p class="swiper-text-desc">Есть над чем задуматься: базовые сценарии поведения
+                  пользователей и по сей день остаются уделом проектантов</p>
+               <button class="swiper-button">Заказать расчет</button>
             </div>
-            ...
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+               <!-- Slides -->
+               <div class="swiper-slide" style="background: url('img/slide1.jpg');">
+               </div>
+               <div class="swiper-slide"
+                  style="background: url('img/slide2.jpg');"></div>
+               <div class="swiper-slide"
+                  style="background: url('img/slide3.jpg');">
+               </div>
+               ...
+            </div>
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
          </div>
 
-         <!-- If we need pagination -->
-         <div class="swiper-pagination">
-         </div>
+         <script>
+            const swiper = new Swiper('.swiper-container', {
+               // Optional parameters
+               direction: 'horizontal',
+               loop: true,
 
-         <!-- If we need scrollbar -->
-         <div class="swiper-scrollbar"></div>
-      </div>
+               // If we need pagination
+               pagination: {
+                  el: '.swiper-pagination',
+                  clickable: 'true',
+               },
 
-      <script>
-         const swiper = new Swiper('.swiper-container', {
-            // Optional parameters
-            direction: 'horizontal',
-            loop: true,
+               // And if we need scrollbar
+               scrollbar: {
+                  el: '.swiper-scrollbar',
+               },
+            });
+         </script>
 
-            // If we need pagination
-            pagination: {
-               el: '.swiper-pagination',
-               clickable: 'true',
-            },
-
-            // And if we need scrollbar
-            scrollbar: {
-               el: '.swiper-scrollbar',
-            },
-         });
-      </script>
+      </section>
 
 
-      <section class="section1">
+
+      <section class="section-about-us">
+
          <div class="container">
-            <div class="section1-about-us">
-               <h2 class="section1-about-us-head">О нас</h2>
-               <div class="section1-about-us-text">
+
+            <div class="section-about-us-description">
+               <h2 class="section-head">О нас</h2>
+               <div class="section-about-us-text">
                   Также как перспективное планирование создаёт
                   необходимость включения в производственный план целого ряда внеочередных мероприятий с
                   учётом комплекса экспериментов, поражающих по своей масштабности и грандиозности. А
@@ -140,30 +145,31 @@
             </div>
 
 
-            <div class="section1-general-boxes">
+            <div class="section-general-boxes">
 
-               <div class="section1-picture">
-                  <div class="section1-picture-inside">
-                     <p class="section1-picture-text">Принимая во внимание показатели успешности, перспективное
+               <div class="section-picture">
+                  <div class="section-picture-inside">
+                     <p class="section-picture-text">Принимая во внимание показатели успешности, перспективное
                         планирование способствует подготовке и реализации новых принципов.</p>
-                     <button class="section1-picture-button">Подробнее</button>
+                     <button class="section-picture-button">Подробнее</button>
                   </div>
                </div>
 
-               <div class="section1-boxes">
-                  <div class="section1-box1">
-                     <img src="img/box1.svg" alt="items" class="section1-box1-img">
-                     <p class="section1-box1-text">
-                        <span class="section1-box1-text-bold">Консультация с широким активом</span>
+               <div class="section-boxes">
+
+                  <div class="section-box-up">
+                     <img src="img/box1.svg" alt="items" class="section-box-img">
+                     <p class="section-box-text">
+                        <span class="section-box-text-bold">Консультация с широким активом</span>
                         <br>А также свежий взгляд на привычные вещи - безусловно открывает новые
                         горизонты для как самодостаточных, так и внешне зависимых концептуальных решений.
                      </p>
                   </div>
 
-                  <div class="section1-box2">
-                     <img src="img/box2.svg" alt="items" class="section1-box2-img">
-                     <p class="section1-box2-text">
-                        <span class="section1-box2-text-bold">В своем стремлении повысить</span>
+                  <div class="section-box-down">
+                     <img src="img/box2.svg" alt="items" class="section-box-img">
+                     <p class="section-box-text">
+                        <span class="section-box-text-bold">В своем стремлении повысить</span>
                         Качество жизни, они забывают, что сплочённость команды профессионалов
                         представляет собой интересный эксперимент проверки прогресса профессионального сообщества.
                      </p>
@@ -171,13 +177,14 @@
                </div>
             </div>
          </div>
+
       </section>
 
 
-      <section class="section2">
+      <section class="section-how-do-we-work">
          <div class="container">
-            <h2 class="section2-how-do-we-work-head">Как мы работаем</h2>
-            <div class="content">
+            <h2 class="section-head">Как мы работаем</h2>
+           
 
                <div id="tabs">
                   <ul class="tabs-nav">
@@ -187,11 +194,12 @@
                      <li><a href="#tab-4">4 шаг</a></li>
                   </ul>
                   <div class="tabs-items">
+
                      <div class="tabs-item" id="tab-1">
-                        <div class="section2-information">
+                        <div class="section-how-do-we-work-information">
                            <div>
-                              <p class="section2-information-text">
-                                 <span class="section2-information-text-bold">Проводим консультацию</span>
+                              <p class="section-information-text">
+                                 <span class="section-information-text-bold">Проводим консультацию</span>
                                  <br> Влечет за собой процесс внедрения и модернизации приоритизации разума над
                                  эмоциями.
                                  В рамках спецификации современных стандартов, некоторые особенности внутренней
@@ -208,21 +216,22 @@
                                  освещают чрезвычайно интересные особенности
                                  картины в целом, однако конкретные выводы, разумеется, призваны к ответу.
                               </p>
-                              <div class="section2-information-buttons">
-                                 <button class="section2-information-button1">Подробнее</button>
-                                 <button class="section2-information-button2">Договор</button>
+                              <div class="section-information-buttons">
+                                 <button class="section-information-button-more">Подробнее</button>
+                                 <button class="section-information-button-agreement">Договор</button>
                               </div>
                            </div>
-                           <div class="section2-information-picture">
-                              <img src="img/tab1.jpg" alt="" class="section2-information-img">
+                           <div class="section-information-picture">
+                              <img src="img/tab1.jpg" alt="" class="section-information-img">
                            </div>
                         </div>
                      </div>
+
                      <div class="tabs-item" id="tab-2">
-                        <div class="section2-information">
+                        <div class="section-how-do-we-work-information">
                            <div>
-                              <p class="section2-information-text">
-                                 <span class="section2-information-text-bold">Составляем смету</span>
+                              <p class="section-information-text">
+                                 <span class="section-information-text-bold">Составляем смету</span>
                                  <br> Внедрения и модернизации приоритизации разума над эмоциями. В рамках
                                  спецификации современных
                                  стандартов, некоторые особенности внутренней политики будут объективно рассмотрены
@@ -234,21 +243,22 @@
                                  зарубежных источников,
                                  современные исследования подвергнуты целой серии независимых исследований.
                               </p>
-                              <div class="section2-information-buttons">
-                                 <button class="section2-information-button1">Подробнее</button>
-                                 <button class="section2-information-button2">Договор</button>
+                              <div class="section-information-buttons">
+                                 <button class="section-information-button-more">Подробнее</button>
+                                 <button class="section-information-button-agreement">Договор</button>
                               </div>
                            </div>
-                           <div class="section2-information-picture">
-                              <img src="img/tab2.jpg" alt="" class="section2-information-img">
+                           <div class="section-information-picture">
+                              <img src="img/tab2.jpg" alt="" class="section-information-img">
                            </div>
                         </div>
                      </div>
+
                      <div class="tabs-item" id="tab-3">
-                        <div class="section2-information">
+                        <div class="section-how-do-we-work-information">
                            <div>
-                              <p class="section2-information-text">
-                                 <span class="section2-information-text-bold">Привлекаем подрядчиков</span>
+                              <p class="section-information-text">
+                                 <span class="section-information-text-bold">Привлекаем подрядчиков</span>
                                  <br> Идейные соображения высшего порядка, а также новая модель организационной
                                  деятельности требует
                                  анализа прогресса профессионального сообщества. Высокий уровень вовлечения
@@ -263,23 +273,22 @@
                                  позволяет выполнить важные задания по разработке прогресса профессионального
                                  сообщества.
                               </p>
-                              <div class="section2-information-buttons">
-                                 <button class="section2-information-button1">Подробнее</button>
-                                 <button class="section2-information-button2">Договор</button>
+                              <div class="section-information-buttons">
+                                 <button class="section-information-button-more">Подробнее</button>
+                                 <button class="section-information-button-agreement">Договор</button>
                               </div>
-
-
                            </div>
-                           <div class="section2-information-picture">
-                              <img src="img/tab3.jpg" alt="" class="section2-information-img">
+                           <div class="section-information-picture">
+                              <img src="img/tab3.jpg" alt="" class="section-information-img">
                            </div>
                         </div>
                      </div>
+
                      <div class="tabs-item" id="tab-4">
-                        <div class="section2-information">
+                        <div class="section-how-do-we-work-information">
                            <div>
-                              <p class="section2-information-text">
-                                 <span class="section2-information-text-bold">Инспектируем все этапы работ</span>
+                              <p class="section-information-text">
+                                 <span class="section-information-text-bold">Инспектируем все этапы работ</span>
                                  <br> Высокий уровень вовлечения представителей целевой аудитории является четким
                                  доказательством
                                  простого факта: высококачественный прототип будущего проекта напрямую зависит от
@@ -290,20 +299,18 @@
                                  показатели успешности,
                                  постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет.
                               </p>
-                              <div class="section2-information-buttons">
-                                 <button class="section2-information-button1">Подробнее</button>
-                                 <button class="section2-information-button2">Договор</button>
+                              <div class="section-information-buttons">
+                                 <button class="section-information-button-more">Подробнее</button>
+                                 <button class="section-information-button-agreement">Договор</button>
                               </div>
-
-
                            </div>
-                           <div class="section2-information-picture">
-                              <img src="img/tab4.jpg" alt="" class="section2-information-img">
+                           <div class="section-information-picture">
+                              <img src="img/tab4.jpg" alt="" class="section-information-img">
                            </div>
                         </div>
                      </div>
                   </div>
-               </div>
+               
 
                <script>
                   $(function () {
@@ -324,18 +331,18 @@
 
                </script>
 
-            </div>
-         </div>
+         
       </section>
 
-      <section class="section3">
+      <section class="section-questions">
+
          <div class="container">
-            <h2 class="section3-head">Часто задаваемые вопросы</h2>
+            <h2 class="section-head">Часто задаваемые вопросы</h2>
 
             <div id="accordion">
-               <h3 class="section3-list-item-link">
-                 Из чего формируется конечная стоимость проекта?
-               <img src="img/+х.svg" alt="" class="button-crist">
+               <h3 class="section-list-item-link">
+                  Из чего формируется конечная стоимость проекта?
+                  <img src="img/+х.svg" alt="" class="button-crist">
                </h3>
                <div class="tabs__text" id="tabs-1" style="height: 0px;">
                   <p class="text-inside">
@@ -359,7 +366,8 @@
                   </p>
 
                </div>
-               <h3 class="section3-list-item-link">
+
+               <h3 class="section-list-item-link">
                   У меня есть свой проект. Сможем ли мы его доработать / реализовать?
                   <img src="img/+х.svg" alt="" class="button-crist">
                </h3>
@@ -371,8 +379,9 @@
                      AJAX. Сейчас разработка jQuery ведётся командой jQuery во главе с Джоном Резигом.
                   </p>
                </div>
-               <h3 class="section3-list-item-link">
-                   Я выбираю между разными компаниями. В чём ваше отличие?
+
+               <h3 class="section-list-item-link">
+                  Я выбираю между разными компаниями. В чём ваше отличие?
                   <img src="img/+х.svg" alt="" class="button-crist">
                </h3>
                <div class="tabs__text" id="tabs-3" style="height: 52px;">
@@ -382,8 +391,9 @@
                      структуру и оформление таких документов.
                   </p>
                </div>
-               <h3 class="section3-list-item-link">
-                  Могу ли я делегировать вам работу / согласование с подрядчиком / организацией? 
+
+               <h3 class="section-list-item-link">
+                  Могу ли я делегировать вам работу / согласование с подрядчиком / организацией?
                   <img src="img/+х.svg" alt="" class="button-crist">
                </h3>
                <div class="tabs__text" id="tabs-4" style="height: 0px;">
@@ -392,7 +402,8 @@
                      разметки.
                   </p>
                </div>
-               <h3 class="section3-list-item-link">
+
+               <h3 class="section-list-item-link">
                   Могу ли я вернуть деньги на каком-либо из этапов работ?
                   <img src="img/+х.svg" alt="" class="button-crist">
                </h3>
@@ -404,6 +415,7 @@
                      AJAX. Сейчас разработка jQuery ведётся командой jQuery во главе с Джоном Резигом.
                   </p>
                </div>
+
             </div>
 
 
@@ -440,44 +452,43 @@
 
             </script>
 
-
-
          </div>
       </section>
    </main>
 
-   <footer class="footer1">
+   <footer class="footer-basement">
       <div class="container">
+
          <div class="footer-space">
-            <div class="footer-space1">
+            <div class="footer-space-first">
                <img src="img/logo-2.png" alt="" class="footer-logo">
-               <ul class="footer-space1-list">
-                  <li class="footer-space1-list-item">О нас</li>
-                  <li class="footer-space1-list-item">Проекты</li>
-                  <li class="footer-space1-list-item">Отзывы </li>
-                  <li class="footer-space1-list-item">Договор оферты</li>
-                  <li class="footer-space1-list-item">Договор подряда</li>
-                  <li class="footer-space1-list-item">Конфиденциальность</li>
-                  <li class="footer-space1-list-item">Партнёрское соглашение</li>
+               <ul class="footer-space-list">
+                  <li class="footer-space-list-item">О нас</li>
+                  <li class="footer-space-list-item">Проекты</li>
+                  <li class="footer-space-list-item">Отзывы </li>
+                  <li class="footer-space-list-item">Договор оферты</li>
+                  <li class="footer-space-list-item">Договор подряда</li>
+                  <li class="footer-space-list-item">Конфиденциальность</li>
+                  <li class="footer-space-list-item">Партнёрское соглашение</li>
                </ul>
-               <div class="footer-space1-networks">
-                  <a href="#"><img src="img/fb.png" alt="facebook" class="footer-space1-networks-img"></a>
-                  <a href="#"><img src="img/vk.png" alt="vk" class="footer-space1-networks-img"></a>
-                  <a href="#"><img src="img/instagram.png" alt="inst" class="footer-space1-networks-img"></a>
+               <div class="footer-space-networks">
+                  <a href="#"><img src="img/fb.png" alt="facebook" class="footer-space-networks-img"></a>
+                  <a href="#"><img src="img/vk.png" alt="vk" class="footer-space-networks-img"></a>
+                  <a href="#"><img src="img/instagram.png" alt="inst" class="footer-space-networks-img"></a>
                </div>
             </div>
-            <div class="footer-space2">
-               <h1 class="footer-space2-head">Оставить заявку</h1>
+
+            <div class="footer-space-second">
+               <h1 class="footer-space-head">Оставить заявку</h1>
                <form action="#" method="POST">
-                  <ul class="footer-space2-form">
+                  <ul class="footer-space-form">
                      <li class="form-item"><input name="name" placeholder="Фамилия,Имя,Отчество*"
-                           class="footer-space2-form-item"></li>
+                           class="footer-space-form-item"></li>
                      <li class="form-item"><input name="mail" placeholder="E-mail*" type="email"
-                           class="footer-space2-form-item"></li>
-                     <li class="form-item"><textarea class="footer-space2-form-item" placeholder="Сообщение"></textarea>
-                     </li>
-                     <li class="footer-space2-form-item1">
-                        <button type="submit" class="footer-space2-form-item-button">Отправить данные</button>
+                           class="footer-space-form-item"></li>
+                     <li class="form-item"><textarea class="footer-space-form-item" placeholder="Сообщение"></textarea> </li>
+                     <li class="footer-space-form-item-down">
+                        <button type="submit" class="footer-space-form-item-button">Отправить данные</button>
                         <div class="footer-checkbox">
                            <input type="checkbox" class="form-ul-checkbox" id="checked1" name="argee" value="yes">
                            <label for="checked1"> Согласен на обработку данных</label>
@@ -487,8 +498,9 @@
                   </ul>
                </form>
             </div>
-            <div class="footer-space3">
-               <p class="footer-space3-text">
+
+            <div class="footer-space-third">
+               <p class="footer-space-text">
                   Высокий уровень вовлечения представителей целевой аудитории является четким
                   доказательством простого факта: разбавленное изрядной долей эмпатии, рациональное
                   мышление позволяет оценить значение модели развития. Таким образом, консультация с широким
