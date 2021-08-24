@@ -1143,6 +1143,12 @@ label {
     }
     .section-box-up {
         display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .section-box-down {
+        display: flex;
+        flex-wrap: nowrap;
         flex-direction: column;
     }
     .section-box-text {
@@ -1152,7 +1158,17 @@ label {
         margin-left: unset;
     }
     .section-head {
+        font-size: 40px;
         margin-top: 30px;
+    }
+    .section-picture {
+        margin-top: 250px;
+    }
+    .section-about-us-text {
+        margin-bottom: 30px;
+    }
+    .section-list-item-link {
+        font-size: 14px;
     }
 
 
